@@ -1,0 +1,11 @@
+[Unit]
+Description=Vic-sensord
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/vic-sensor
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
